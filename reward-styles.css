@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eaf7fc; /* Light blue background */
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff69b4; /* Bright pink heading */
+}
+
+.points {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.duck-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#duck {
+    width: 150px;
+}
+button {
+    background-color: #ff4f9a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  button:hover {
+    background-color: #e14585;
+  }
+  
+
+.rewards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.reward {
+    cursor: pointer;
+    width: 30%;  /* Each reward takes 45% width to fit 2 in a row */
+    padding: 15px;
+    background: #ff69b4; /* Bright pink reward button */
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
+    margin: 10px;
+}
+
+.reward:hover {
+    background: #ff4f9a; /* Slightly darker pink on hover */
+}
+
+.reward img {
+    width: 80px;
+    height: 80px;
+}

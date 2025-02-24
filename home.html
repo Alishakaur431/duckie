@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Task Manager</title>
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Duckie</div>
+        <div class="rewards"></div>
+        <button onclick="window.location.href='reward.html'"> Rewards</button>
+
+    </nav>
+    
+    <div class="container">
+        <img src="images/standing.png" alt="Duckie" class="duck-image">
+        <header>
+           
+            <p id="goal-count">0 goals left for today</p>
+            <p id="score">Total Points: 0</p>
+        </header>
+        <main>
+            <div class="task-input">
+                <input type="text" id="task-name" placeholder="Enter task name (e.g., Drink water)">
+                <button id="add-task">Add Task</button>
+            </div>
+            <div id="task-list">
+                <!-- Dynamic tasks will appear here -->
+            </div>
+        </main>
+        <div id="points-popup" class="hidden">+5 Points!</div>
+    </div>
+    <script src="home-script.js"></script>
+</body>
+</html>

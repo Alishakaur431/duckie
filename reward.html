@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duckie Rewards</title>
+    <link rel="stylesheet" href="reward-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Rewards </h1>
+        <p class="points">Your Points: <span id="userPoints">100</span></p>
+        <button onclick="window.location.href='home.html'"> Home</button>
+
+
+        <div class="duck-container">
+            <img id="duck" src="images/standing.png" alt="Duckie">
+            
+        </div>
+
+        <div class="rewards">
+            <div class="reward" onclick="redeemReward('umbrella', 50, 'images/umbrella.png')">
+                <img src="images/uo.png" alt="Umbrella">
+                <p>Umbrella - 50 Points</p>
+            </div>
+            <div class="reward" onclick="redeemReward('skateboard', 70, 'images/skateboard.png')">
+                <img src="images/so.png" alt="Skateboard">
+                <p>Skateboard - 70 Points</p>
+            </div>
+            <div class="reward" onclick="redeemReward('guitar', 90, 'images/gitar.png')">
+                <img src="images/go.png" alt="Guitar">
+                <p>Guitar - 90 Points</p>
+            </div>
+            <div class="reward" onclick="redeemReward('sunglasses', 40, 'images/sunglasses.png')">
+                <img src="images/suno.png" alt="Sunglasses">
+                <p>Sunglasses - 40 Points</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="reward-script.js"></script>
+</body>
+</html>
